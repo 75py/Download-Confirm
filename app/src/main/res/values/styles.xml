@@ -1,11 +1,13 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+        <item name="android:textColor">@color/primary_material_dark</item>
     </style>
     <style name="AppTheme.Dialog" parent="Theme.AppCompat.Light.Dialog">
-        <!-- Customize your theme here. -->
+    </style>
+    <style name="TextAppearance.Medium" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:textSize">@dimen/abc_text_size_medium_material</item>
     </style>
 
 </resources>
