@@ -41,8 +41,10 @@
         <activity
             android:name=".extension.ApkConfirmActivity"
             android:enabled="true"
+            android:excludeFromRecents="true"
             android:label="@string/label_apk"
             android:launchMode="singleInstance"
+            android:noHistory="true"
             android:theme="@style/AppTheme.Dialog">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -60,8 +62,10 @@
         <activity
             android:name=".extension.PdfConfirmActivity"
             android:enabled="true"
+            android:excludeFromRecents="true"
             android:label="@string/label_pdf"
             android:launchMode="singleInstance"
+            android:noHistory="true"
             android:theme="@style/AppTheme.Dialog">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -77,10 +81,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.nagopy.android.downloadconfirm.extension.TgzConfirmActivity"
+            android:name=".extension.TgzConfirmActivity"
             android:enabled="true"
+            android:excludeFromRecents="true"
             android:label="@string/label_tgz"
             android:launchMode="singleInstance"
+            android:noHistory="true"
             android:theme="@style/AppTheme.Dialog">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -98,8 +104,10 @@
         <activity
             android:name=".extension.ZipConfirmActivity"
             android:enabled="true"
+            android:excludeFromRecents="true"
             android:label="@string/label_zip"
             android:launchMode="singleInstance"
+            android:noHistory="true"
             android:theme="@style/AppTheme.Dialog">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -119,8 +127,10 @@
         <activity
             android:name=".host.DlGoogleComConfirmActivity"
             android:enabled="true"
+            android:excludeFromRecents="true"
             android:label="@string/label_dl_google_com"
             android:launchMode="singleInstance"
+            android:noHistory="true"
             android:theme="@style/AppTheme.Dialog">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -137,8 +147,10 @@
         <activity
             android:name=".host.AndroidClientsGoogleComConfirmActivity"
             android:enabled="true"
+            android:excludeFromRecents="true"
             android:label="@string/label_android_clients_google_com"
             android:launchMode="singleInstance"
+            android:noHistory="true"
             android:theme="@style/AppTheme.Dialog">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
