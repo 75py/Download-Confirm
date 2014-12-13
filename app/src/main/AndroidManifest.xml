@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nagopy.android.downloadconfirm">
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <!-- Setting -->
+        <activity
+            android:name=".SettingActivity"
+            android:enabled="@bool/is_honeycomb_or_later"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SettingActivityCompat"
+            android:enabled="@bool/is_gingerbread_mr1"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.nagopy.android.downloadconfirm.PackageManagementService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!-- Extensions -->
+        <activity
+            android:name=".extension.ApkConfirmActivity"
+            android:enabled="true"
+            android:label="@string/label_apk"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:host="*" />
+                <data android:pathPattern=".*\.apk" />
+                <data android:pathPattern=".*..*\.apk" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".extension.PdfConfirmActivity"
+            android:enabled="true"
+            android:label="@string/label_pdf"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:host="*" />
+                <data android:pathPattern=".*\.pdf" />
+                <data android:pathPattern=".*..*\.pdf" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nagopy.android.downloadconfirm.extension.TgzConfirmActivity"
+            android:enabled="true"
+            android:label="@string/label_tgz"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:host="*" />
+                <data android:pathPattern=".*\.tgz" />
+                <data android:pathPattern=".*..*\.tgz" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".extension.ZipConfirmActivity"
+            android:enabled="true"
+            android:label="@string/label_zip"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:host="*" />
+                <data android:pathPattern=".*\.zip" />
+                <data android:pathPattern=".*..*\.zip" />
+            </intent-filter>
+        </activity>
+
+        <!-- Hosts -->
+        <activity
+            android:name=".host.DlGoogleComConfirmActivity"
+            android:enabled="true"
+            android:label="@string/label_dl_google_com"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:host="@string/host_dl_google_com" />
+                <data android:pathPattern=".*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".host.AndroidClientsGoogleComConfirmActivity"
+            android:enabled="true"
+            android:label="@string/label_android_clients_google_com"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:host="@string/host_android_clients_google_com" />
+                <data android:pathPattern=".*" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

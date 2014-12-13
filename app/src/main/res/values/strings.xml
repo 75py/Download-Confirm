@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name" translatable="false">Download Confirm</string>
+    <string name="label_apk" translatable="false">[APK] Download Confirm</string>
+    <string name="label_pdf" translatable="false">[PDF] Download Confirm</string>
+    <string name="label_zip" translatable="false">[ZIP] Download Confirm</string>
+    <string name="label_tgz" translatable="false">[TGZ] Download Confirm</string>
+    <string name="label_dl_google_com" translatable="false">[dl.google.com] Download Confirm</string>
+    <string name="label_android_clients_google_com"  translatable="false">[android.clients.google.com] Download Confirm</string>
+
+    <string name="pref_title_target_extension">Extensions</string>
+    <string name="pref_title_target_host">Hosts</string>
+    <string name="confirm_message">It\'s [%1$s] file.\nIf you want to download it, please click download button and choose your web browser such as Chrome."</string>
+    <string name="download">Download</string>
+
+    <string name="host_dl_google_com" tranlatable="false">dl.google.com</string>
+    <string name="host_android_clients_google_com" tranlatable="false">android.clients.google.com</string>
+</resources>

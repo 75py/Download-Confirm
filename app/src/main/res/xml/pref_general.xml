@@ -1,0 +1,41 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/pref_title_target_extension">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key=".extension.Apk"
+            android:title="APK" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key=".extension.Pdf"
+            android:title="PDF" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key=".extension.Tgz"
+            android:title="TGZ" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key=".extension.Zip"
+            android:title="ZIP" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_title_target_host">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key=".host.DlGoogleCom"
+            android:title="@string/host_dl_google_com" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key=".host.AndroidClientsGoogleCom"
+            android:title="@string/host_android_clients_google_com" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
