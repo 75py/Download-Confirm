@@ -14,6 +14,6 @@
     <string name="confirm_message">It\'s [%1$s] file.\nIf you want to download it, please click download button and choose your web browser such as Chrome."</string>
     <string name="download">Download</string>
 
-    <string name="host_dl_google_com" tranlatable="false">dl.google.com</string>
-    <string name="host_android_clients_google_com" tranlatable="false">android.clients.google.com</string>
+    <string name="host_dl_google_com" translatable="false">dl.google.com</string>
+    <string name="host_android_clients_google_com" translatable="false">android.clients.google.com</string>
 </resources>
