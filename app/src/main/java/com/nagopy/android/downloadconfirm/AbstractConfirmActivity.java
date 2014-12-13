@@ -3,11 +3,14 @@ package com.nagopy.android.downloadconfirm;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Point;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.TextView;
 
 import java.util.Locale;
@@ -26,7 +29,8 @@ public abstract class AbstractConfirmActivity extends ActionBarActivity implemen
         intent.setComponent(null);
 
         setContentView(R.layout.activity_confirm);
-        getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        getWindow().setLayout(getDisplayWidth() - (getResources().getDimensionPixelSize(R.dimen.activity_horizontal_margin) * 2)
+                , ViewGroup.LayoutParams.WRAP_CONTENT);
 
         TextView url = (TextView) findViewById(R.id.url);
         url.setText(intent.getDataString());
@@ -70,5 +74,16 @@ public abstract class AbstractConfirmActivity extends ActionBarActivity implemen
         Intent service = new Intent(getApplicationContext(), PackageManagementService.class);
         service.putExtra("className", getClass().getName());
         startService(service);
+    }
+
+    protected int getDisplayWidth() {
+        WindowManager windowManager = (WindowManager) getSystemService(WINDOW_SERVICE);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR2) {
+            Point outSize = new Point();
+            windowManager.getDefaultDisplay().getSize(outSize);
+            return outSize.x;
+        } else {
+            return windowManager.getDefaultDisplay().getWidth();
+        }
     }
 }
