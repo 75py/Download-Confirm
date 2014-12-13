@@ -16,7 +16,7 @@
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
         android:singleLine="false"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textAppearance="@style/TextAppearance.Medium"
         android:textIsSelectable="true"
         tools:ignore="Deprecated,TextFields" />
 
@@ -28,7 +28,7 @@
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textAppearance="@style/TextAppearance.Medium"
         android:textIsSelectable="true" />
 
     <include layout="@layout/inc_buttons" />
