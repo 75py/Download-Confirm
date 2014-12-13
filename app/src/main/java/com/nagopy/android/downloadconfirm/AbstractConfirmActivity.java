@@ -29,7 +29,7 @@ public abstract class AbstractConfirmActivity extends ActionBarActivity implemen
         intent.setComponent(null);
 
         setContentView(R.layout.activity_confirm);
-        getWindow().setLayout(getDisplayWidth() - (getResources().getDimensionPixelSize(R.dimen.activity_horizontal_margin) * 2)
+        getWindow().setLayout(getDisplayWidth() - (getResources().getDimensionPixelSize(R.dimen.dialog_horizontal_margin) * 2)
                 , ViewGroup.LayoutParams.WRAP_CONTENT);
 
         TextView url = (TextView) findViewById(R.id.url);
