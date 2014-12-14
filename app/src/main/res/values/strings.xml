@@ -14,5 +14,6 @@
     <string name="download">Download</string>
     <string name="source">Source code</string>
     <string name="github_url" translatable="false">https://github.com/75py/Download-Confirm</string>
+    <string name="version">Version</string>
 
 </resources>
