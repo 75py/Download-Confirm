@@ -15,3 +15,11 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+
+-keep public class * extends android.preference.PreferenceFragment
+
+-dontskipnonpubliclibraryclasses
+-optimizationpasses 3
+-flattenpackagehierarchy
+-keepattributes SourceFile,LineNumberTable
+-printmapping map.txt

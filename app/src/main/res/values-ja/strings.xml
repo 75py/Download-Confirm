@@ -3,5 +3,7 @@
     <string name="confirm_message">これは【%1$s】のファイルです。\nファイルをダウンロードする場合は、ダウンロードボタンをクリックし、ウェブブラウザ（Chrome等）を選択してください。</string>
     <string name="download">ダウンロード</string>
     <string name="pref_title_target_extension">拡張子</string>
-    <string name="pref_title_target_host">特定のホスト</string>
+    <string name="pref_title_about">このアプリについて</string>
+    <string name="source">ソースコード</string>
+    <string name="version">バージョン</string>
 </resources>
