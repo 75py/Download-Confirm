@@ -24,4 +24,16 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory android:title="@string/pref_title_about">
+
+        <Preference
+            android:summary="@string/github_url"
+            android:title="@string/source">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="@string/github_url" />
+        </Preference>
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
