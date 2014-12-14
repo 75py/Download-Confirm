@@ -122,48 +122,6 @@
                 <data android:pathPattern=".*..*\.zip" />
             </intent-filter>
         </activity>
-
-        <!-- Hosts -->
-        <activity
-            android:name=".host.DlGoogleComConfirmActivity"
-            android:enabled="true"
-            android:excludeFromRecents="true"
-            android:label="@string/label_dl_google_com"
-            android:launchMode="singleInstance"
-            android:noHistory="true"
-            android:theme="@style/AppTheme.Dialog">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.BROWSABLE" />
-                <category android:name="android.intent.category.DEFAULT" />
-
-                <data android:scheme="http" />
-                <data android:scheme="https" />
-                <data android:host="@string/host_dl_google_com" />
-                <data android:pathPattern=".*" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".host.AndroidClientsGoogleComConfirmActivity"
-            android:enabled="true"
-            android:excludeFromRecents="true"
-            android:label="@string/label_android_clients_google_com"
-            android:launchMode="singleInstance"
-            android:noHistory="true"
-            android:theme="@style/AppTheme.Dialog">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.BROWSABLE" />
-                <category android:name="android.intent.category.DEFAULT" />
-
-                <data android:scheme="http" />
-                <data android:scheme="https" />
-                <data android:host="@string/host_android_clients_google_com" />
-                <data android:pathPattern=".*" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>
