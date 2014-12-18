@@ -2,6 +2,10 @@ import java.text.SimpleDateFormat
 
 apply plugin: 'com.android.application'
 
+// バージョン名
+// versionCodeに使用するため、「{0-99}.{0-99}.{0-99}」で指定すること。
+def verName = "0.1.2"
+
 android {
     compileSdkVersion 21
     buildToolsVersion "21.1.2"
@@ -10,8 +14,8 @@ android {
         applicationId "com.nagopy.android.downloadconfirm"
         minSdkVersion 10
         targetSdkVersion 21
-        versionCode 2
-        versionName "0.1.2"
+        versionName verName
+        versionCode Integer.parseInt(verName.split("\\.")[0]) * 10000 + Integer.parseInt(verName.split("\\.")[1]) * 100 + Integer.parseInt(verName.split("\\.")[2])
     }
     buildTypes {
         release {
