@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="confirm_message">これは【%1$s】のファイルです。\nファイルをダウンロードする場合は、ダウンロードボタンをクリックし、ウェブブラウザ（Chrome等）を選択してください。</string>
+    <string name="confirm_message">これは【%1$s】のファイルです。\n%2$s</string>
     <string name="download">ダウンロード</string>
     <string name="pref_title_target_extension">拡張子</string>
     <string name="pref_title_about">このアプリについて</string>
@@ -8,4 +8,7 @@
     <string name="version">バージョン</string>
     <string name="help">ヘルプ</string>
     <string name="help_summary">動作確認用のリンクがありますので、ご利用ください。</string>
+    <string name="confirm_message_sub_not_found_apps">このファイルをダウンロードできるアプリが見つかりませんでした。</string>
+    <string name="confirm_message_sub_one_app">このファイルをダウンロードする場合は、ダウンロードボタンをタップしてください。</string>
+    <string name="confirm_message_sub_many_apps">このファイルをダウンロードする場合は、ダウンロードボタンをタップし、ウェブブラウザ（Chrome等）を選択してください。</string>
 </resources>
