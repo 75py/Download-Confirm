@@ -6,4 +6,6 @@
     <string name="pref_title_about">このアプリについて</string>
     <string name="source">ソースコード</string>
     <string name="version">バージョン</string>
+    <string name="help">ヘルプ</string>
+    <string name="help_summary">動作確認用のリンクがありますので、ご利用ください。</string>
 </resources>

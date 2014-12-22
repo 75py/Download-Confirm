@@ -15,5 +15,8 @@
     <string name="source">Source code</string>
     <string name="github_url" translatable="false">https://github.com/75py/Download-Confirm</string>
     <string name="version">Version</string>
+    <string name="help_url" translatable="false">http://apps.nagopy.com/android/downloadconfirm.html</string>
+    <string name="help">Help</string>
+    <string name="help_summary">Contains test links.</string>
 
 </resources>
