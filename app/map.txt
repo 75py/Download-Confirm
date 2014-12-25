@@ -6015,33 +6015,33 @@ android.support.v7.widget.Toolbar$SavedState$1 -> android.support.v7.widget.ap:
     1865:1865:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
 com.nagopy.android.downloadconfirm.AbstractConfirmActivity -> com.nagopy.android.downloadconfirm.a:
     android.content.Intent intent -> n
-    24:43:void onCreate(android.os.Bundle) -> onCreate
-    46:46:java.lang.String getExtensionDisplayName() -> i
-    51:65:void onClick(android.view.View) -> onClick
-    68:71:void setDisabled() -> j
-    74:77:void setEnabledDelayed() -> k
-    80:86:int getDisplayWidth() -> l
+    34:79:void onCreate(android.os.Bundle) -> onCreate
+    87:87:java.lang.String getExtensionDisplayName() -> i
+    92:106:void onClick(android.view.View) -> onClick
+    112:115:void disableThisActivity() -> j
+    121:124:void enableThisActivity() -> k
+    132:138:int getDisplayWidth() -> l
 com.nagopy.android.downloadconfirm.PackageManagementService -> com.nagopy.android.downloadconfirm.PackageManagementService:
-    14:14:android.os.IBinder onBind(android.content.Intent) -> onBind
-    19:37:int onStartCommand(android.content.Intent,int,int) -> onStartCommand
+    17:17:android.os.IBinder onBind(android.content.Intent) -> onBind
+    22:40:int onStartCommand(android.content.Intent,int,int) -> onStartCommand
 com.nagopy.android.downloadconfirm.PackageManagementService$1 -> com.nagopy.android.downloadconfirm.b:
     java.lang.String val$className -> a
     com.nagopy.android.downloadconfirm.PackageManagementService this$0 -> b
-    25:35:void run() -> run
+    28:38:void run() -> run
 com.nagopy.android.downloadconfirm.SettingActivity -> com.nagopy.android.downloadconfirm.SettingActivity:
-    19:28:void onCreate(android.os.Bundle) -> onCreate
-    40:42:void onResume() -> onResume
-    46:48:void onPause() -> onPause
-    52:64:void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String) -> onSharedPreferenceChanged
+    22:31:void onCreate(android.os.Bundle) -> onCreate
+    43:45:void onResume() -> onResume
+    49:51:void onPause() -> onPause
+    55:67:void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String) -> onSharedPreferenceChanged
 com.nagopy.android.downloadconfirm.SettingActivity$SettingsFragment -> com.nagopy.android.downloadconfirm.SettingActivity$SettingsFragment:
-    33:35:void onCreate(android.os.Bundle) -> onCreate
+    36:38:void onCreate(android.os.Bundle) -> onCreate
 com.nagopy.android.downloadconfirm.SettingActivityCompat -> com.nagopy.android.downloadconfirm.SettingActivityCompat:
-    17:19:void onCreate(android.os.Bundle) -> onCreate
-    23:25:void onResume() -> onResume
-    29:31:void onPause() -> onPause
-    35:47:void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String) -> onSharedPreferenceChanged
+    20:22:void onCreate(android.os.Bundle) -> onCreate
+    26:28:void onResume() -> onResume
+    32:34:void onPause() -> onPause
+    38:50:void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String) -> onSharedPreferenceChanged
 com.nagopy.android.downloadconfirm.VersionPreference -> com.nagopy.android.downloadconfirm.VersionPreference:
-    36:41:void setup(android.content.Context) -> a
+    36:37:void setup(android.content.Context) -> a
 com.nagopy.android.downloadconfirm.extension.ApkConfirmActivity -> com.nagopy.android.downloadconfirm.extension.ApkConfirmActivity:
 com.nagopy.android.downloadconfirm.extension.PdfConfirmActivity -> com.nagopy.android.downloadconfirm.extension.PdfConfirmActivity:
 com.nagopy.android.downloadconfirm.extension.TgzConfirmActivity -> com.nagopy.android.downloadconfirm.extension.TgzConfirmActivity:

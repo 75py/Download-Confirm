@@ -11,6 +11,9 @@ import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 
+/**
+ * 設定画面を表示するAPI11以上向けActivity.
+ */
 @TargetApi(Build.VERSION_CODES.HONEYCOMB)
 public class SettingActivity extends ActionBarActivity implements SharedPreferences.OnSharedPreferenceChangeListener {
 

@@ -7,6 +7,9 @@ import android.content.pm.PackageManager;
 import android.os.Handler;
 import android.os.IBinder;
 
+/**
+ * 一定時間後にクラスを有効にするためのサービス.
+ */
 public class PackageManagementService extends Service {
 
     @Override
