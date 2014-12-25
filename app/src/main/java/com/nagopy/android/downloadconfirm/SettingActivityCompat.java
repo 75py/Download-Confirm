@@ -9,6 +9,9 @@ import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
 
+/**
+ * 設定画面を表示するAPI10向けActivity.
+ */
 @TargetApi(Build.VERSION_CODES.GINGERBREAD_MR1)
 public class SettingActivityCompat extends PreferenceActivity implements SharedPreferences.OnSharedPreferenceChangeListener {
 
