@@ -31,15 +31,15 @@ import static android.support.test.espresso.action.ViewActions.click;
 /**
  * 設定画面のテストクラス.
  */
-// API10で実行する場合はコメントアウトを解除すること
-// @Ignore
+// API10で実行する場合はコメントアウトすること
+@Ignore
 @RunWith(AndroidJUnit4.class)
-public class SettingActivityTest extends ActivityInstrumentationTestCase2<SettingActivity> {
+public class SettingActivityCompatTest extends ActivityInstrumentationTestCase2<SettingActivityCompat> {
 
     /**
      * テスト対象Activity
      */
-    private SettingActivity activity;
+    private SettingActivityCompat activity;
     /**
      * @link SharedPreferences
      */
@@ -48,8 +48,8 @@ public class SettingActivityTest extends ActivityInstrumentationTestCase2<Settin
     /**
      * コンストラクタ.
      */
-    public SettingActivityTest() {
-        super(SettingActivity.class);
+    public SettingActivityCompatTest() {
+        super(SettingActivityCompat.class);
     }
 
 
