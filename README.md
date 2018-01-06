@@ -3,14 +3,10 @@ Download-Confirm
 
 Download Confirm saves you accidentaly download files on link clicked.
 
-Google Play
------------
+Download
+--------
 
 https://play.google.com/store/apps/details?id=com.nagopy.android.downloadconfirm
-
-Permissions
------------
-* no required!
 
 Test download links
 -------------------

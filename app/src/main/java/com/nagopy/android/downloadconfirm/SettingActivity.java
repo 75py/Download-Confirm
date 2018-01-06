@@ -9,13 +9,13 @@ import android.os.Bundle;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 
 /**
  * 設定画面を表示するAPI11以上向けActivity.
  */
 @TargetApi(Build.VERSION_CODES.HONEYCOMB)
-public class SettingActivity extends ActionBarActivity implements SharedPreferences.OnSharedPreferenceChangeListener {
+public class SettingActivity extends AppCompatActivity implements SharedPreferences.OnSharedPreferenceChangeListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,7 +52,7 @@ public class SettingActivity extends ActionBarActivity implements SharedPreferen
 
     @Override
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
-        if(key.startsWith(".")) {
+        if (key.startsWith(".")) {
             String packageName = getPackageName();
             String targetActivityName = packageName + key + "ConfirmActivity";
             try {
