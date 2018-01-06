@@ -11,25 +11,25 @@ data = {
 
 xmlTemplates = [
     {
-        "template": "AndroidManifest.xml",
+        "template": "template.AndroidManifest.xml",
         "output": "../app/src/main/AndroidManifest.xml"
     },
     {
-        "template": "strings_ext.xml",
+        "template": "template.strings_ext.xml",
         "output": "../app/src/main/res/values/strings_ext.xml"
     },
     {
-        "template": "pref_general.xml",
+        "template": "template.pref_general.xml",
         "output": "../app/src/main/res/xml/pref_general.xml"
     },
 ]
 javaTemplates = [
     {
-        "template": "ConfirmActivity.java",
+        "template": "template.ConfirmActivity.java",
         "output": "../app/src/main/java/com/nagopy/android/downloadconfirm/extension/{}ConfirmActivity.java"
     },
     {
-        "template": "HookTest.java",
+        "template": "template.HookTest.java",
         "output": "../app/src/androidTest/java/com/nagopy/android/downloadconfirm/extension/{}HookTest.java"
     },
 ]
