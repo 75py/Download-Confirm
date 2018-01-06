@@ -5,9 +5,8 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.graphics.Point;
-import android.os.Build;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
@@ -22,7 +21,7 @@ import java.util.Locale;
  * 通常の拡張子ごとの確認ダイアログであれば、このクラスを実装したクラスを作成するだけで良い。
  * その際、クラス名は【拡張子（先頭大文字）】ConfirmActivityにする。
  */
-public abstract class AbstractConfirmActivity extends ActionBarActivity implements View.OnClickListener {
+public abstract class AbstractConfirmActivity extends AppCompatActivity implements View.OnClickListener {
 
     /**
      * 起動インテントを保持するフィールド
@@ -33,8 +32,6 @@ public abstract class AbstractConfirmActivity extends ActionBarActivity implemen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setTitle(R.string.app_name);
-
         intent = (Intent) getIntent().clone();
         intent.setComponent(null);
 
@@ -42,7 +39,7 @@ public abstract class AbstractConfirmActivity extends ActionBarActivity implemen
         getWindow().setLayout(getDisplayWidth() - (getResources().getDimensionPixelSize(R.dimen.dialog_horizontal_margin) * 2)
                 , ViewGroup.LayoutParams.WRAP_CONTENT);
 
-        TextView url = (TextView) findViewById(R.id.url);
+        TextView url = findViewById(R.id.url);
         url.setText(intent.getDataString());
 
 
@@ -50,7 +47,7 @@ public abstract class AbstractConfirmActivity extends ActionBarActivity implemen
         View downloadButton = findViewById(R.id.download);
         downloadButton.setOnClickListener(this);
 
-        TextView message = (TextView) findViewById(R.id.message);
+        TextView message = findViewById(R.id.message);
         PackageManager packageManager = getPackageManager();
         List<ResolveInfo> apps = packageManager.queryIntentActivities(intent, PackageManager.GET_META_DATA);
         if (apps == null || apps.isEmpty()) {
@@ -130,12 +127,8 @@ public abstract class AbstractConfirmActivity extends ActionBarActivity implemen
      */
     protected int getDisplayWidth() {
         WindowManager windowManager = (WindowManager) getSystemService(WINDOW_SERVICE);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR2) {
-            Point outSize = new Point();
-            windowManager.getDefaultDisplay().getSize(outSize);
-            return outSize.x;
-        } else {
-            return windowManager.getDefaultDisplay().getWidth();
-        }
+        Point outSize = new Point();
+        windowManager.getDefaultDisplay().getSize(outSize);
+        return outSize.x;
     }
 }

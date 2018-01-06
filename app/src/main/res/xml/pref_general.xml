@@ -42,8 +42,9 @@
                 android:data="@string/github_url" />
         </Preference>
 
-        <com.nagopy.android.downloadconfirm.VersionPreference
+        <Preference
             android:selectable="false"
+            android:summary="@string/version_name"
             android:title="@string/version" />
 
     </PreferenceCategory>

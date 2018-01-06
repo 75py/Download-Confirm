@@ -1,13 +1,8 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="android:textColor">@color/primary_material_dark</item>
     </style>
     <style name="AppTheme.Dialog" parent="Theme.AppCompat.Light.Dialog">
-    </style>
-    <style name="TextAppearance.Medium" parent="TextAppearance.AppCompat.Body1">
-        <item name="android:textColor">?android:textColorPrimary</item>
-        <item name="android:textSize">@dimen/abc_text_size_medium_material</item>
     </style>
 
 </resources>

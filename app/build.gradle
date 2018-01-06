@@ -1,10 +1,6 @@
-import java.text.SimpleDateFormat
-
 apply plugin: 'com.android.application'
-
-// バージョン名
-// versionCodeに使用するため、「{0-99}.{0-99}.{0-99}」で指定すること。
-def verName = "1.0.0"
+apply plugin: 'com.cookpad.android.licensetools'
+apply plugin: 'jacoco-android'
 
 android {
     compileSdkVersion 27
@@ -14,12 +10,14 @@ android {
         applicationId "com.nagopy.android.downloadconfirm"
         minSdkVersion 19
         targetSdkVersion 27
-        versionName verName
-        versionCode Integer.parseInt(verName.split("\\.")[0]) * 10000 + Integer.parseInt(verName.split("\\.")[1]) * 100 + Integer.parseInt(verName.split("\\.")[2])
+        versionCode publish_version_code
+        versionName publish_version_name
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        resValue "string", "version_name", publish_version_name
     }
     buildTypes {
         release {
+            shrinkResources true
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
@@ -36,9 +34,9 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.android.support:appcompat-v7:27.0.2'
 
-    androidTestCompile 'com.android.support:support-annotations:21.0.3'
-    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.0'
-    androidTestCompile 'com.android.support.test:testing-support-lib:0.1'
+    androidTestCompile 'com.android.support.test:runner:1.0.1'
+    androidTestCompile 'com.android.support.test:rules:1.0.1'
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:3.0.1'
 }
