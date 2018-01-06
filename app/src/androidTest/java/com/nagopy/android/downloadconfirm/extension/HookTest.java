@@ -9,12 +9,10 @@ import android.support.test.espresso.assertion.ViewAssertions;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 
-import com.nagopy.android.downloadconfirm.R;
 import com.nagopy.android.downloadconfirm.SettingActivity;
 
 import org.junit.Before;
 import org.junit.Rule;
-import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import java.util.List;
@@ -38,7 +36,7 @@ public abstract class HookTest {
     private SettingActivity activity;
 
     @Rule
-    public ActivityTestRule<SettingActivity> rule = new ActivityTestRule<SettingActivity>(SettingActivity.class);
+    public ActivityTestRule<SettingActivity> rule = new ActivityTestRule<>(SettingActivity.class);
 
     @Before
     public void setUp() throws Exception {
