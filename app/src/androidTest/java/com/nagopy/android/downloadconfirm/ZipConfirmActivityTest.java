@@ -1,6 +1,8 @@
 package com.nagopy.android.downloadconfirm;
 
+import android.content.ComponentName;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.runner.AndroidJUnit4;
@@ -38,6 +40,15 @@ public class ZipConfirmActivityTest extends ActivityInstrumentationTestCase2<Zip
     @Before
     public void setUp() throws Exception {
         super.setUp();
+
+        InstrumentationRegistry.getTargetContext()
+                .getPackageManager()
+                .setComponentEnabledSetting(
+                        new ComponentName(InstrumentationRegistry.getTargetContext(), ZipConfirmActivity.class)
+                        , PackageManager.COMPONENT_ENABLED_STATE_ENABLED
+                        , PackageManager.DONT_KILL_APP
+                );
+
         injectInstrumentation(InstrumentationRegistry.getInstrumentation());
 
         Intent intent = new Intent(Intent.ACTION_VIEW);
