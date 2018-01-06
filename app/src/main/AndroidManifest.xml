@@ -27,6 +27,7 @@
             android:exported="false" />
 
         <!-- Extensions -->
+
         <activity
             android:name=".extension.ApkConfirmActivity"
             android:enabled="true"
@@ -44,6 +45,7 @@
                 <data android:scheme="http" />
                 <data android:scheme="https" />
                 <data android:host="*" />
+
                 <data android:pathPattern=".*\.apk" />
                 <data android:pathPattern=".*..*\.apk" />
                 <data android:pathPattern=".*..*..*\.apk" />
@@ -65,6 +67,7 @@
                 <data android:pathPattern=".*..*..*..*..*..*..*..*..*\.APK" />
                 <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*\.APK" />
             </intent-filter>
+    
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -73,17 +76,18 @@
 
                 <data android:scheme="http" />
                 <data android:scheme="https" />
+                <data android:scheme="content" />
                 <data android:mimeType="application/vnd.android.package-archive" />
             </intent-filter>
+    
         </activity>
 
         <activity
             android:name=".extension.PdfConfirmActivity"
             android:enabled="true"
             android:excludeFromRecents="true"
-            android:exported="true"
             android:label="@string/label_pdf"
-            android:launchMode="standard"
+            android:launchMode="singleInstance"
             android:noHistory="true"
             android:theme="@style/AppTheme.Dialog">
             <intent-filter>
@@ -94,8 +98,8 @@
 
                 <data android:scheme="http" />
                 <data android:scheme="https" />
-                <data android:scheme="content" />
                 <data android:host="*" />
+
                 <data android:pathPattern=".*\.pdf" />
                 <data android:pathPattern=".*..*\.pdf" />
                 <data android:pathPattern=".*..*..*\.pdf" />
@@ -117,6 +121,7 @@
                 <data android:pathPattern=".*..*..*..*..*..*..*..*..*\.PDF" />
                 <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*\.PDF" />
             </intent-filter>
+    
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -128,6 +133,7 @@
                 <data android:scheme="content" />
                 <data android:mimeType="application/pdf" />
             </intent-filter>
+    
         </activity>
 
         <activity
@@ -141,12 +147,13 @@
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
-                <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
 
                 <data android:scheme="http" />
                 <data android:scheme="https" />
                 <data android:host="*" />
+
                 <data android:pathPattern=".*\.tgz" />
                 <data android:pathPattern=".*..*\.tgz" />
                 <data android:pathPattern=".*..*..*\.tgz" />
@@ -168,7 +175,9 @@
                 <data android:pathPattern=".*..*..*..*..*..*..*..*..*\.TGZ" />
                 <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*\.TGZ" />
             </intent-filter>
+    
         </activity>
+
         <activity
             android:name=".extension.ZipConfirmActivity"
             android:enabled="true"
@@ -180,12 +189,13 @@
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
-                <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
 
                 <data android:scheme="http" />
                 <data android:scheme="https" />
                 <data android:host="*" />
+
                 <data android:pathPattern=".*\.zip" />
                 <data android:pathPattern=".*..*\.zip" />
                 <data android:pathPattern=".*..*..*\.zip" />
@@ -207,6 +217,8 @@
                 <data android:pathPattern=".*..*..*..*..*..*..*..*..*\.ZIP" />
                 <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*\.ZIP" />
             </intent-filter>
+    
         </activity>
+
     </application>
 </manifest>

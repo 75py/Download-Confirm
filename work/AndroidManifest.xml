@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nagopy.android.downloadconfirm">
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".SettingActivity"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.nagopy.android.downloadconfirm.PackageManagementService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!-- Extensions -->
+{% for extInfo in extensionInfoList %}
+        <activity
+            android:name=".extension.{{ extInfo.ext.capitalize() }}ConfirmActivity"
+            android:enabled="true"
+            android:excludeFromRecents="true"
+            android:label="@string/label_{{ extInfo.ext.lower() }}"
+            android:launchMode="singleInstance"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:host="*" />
+
+                <data android:pathPattern=".*\.{{ extInfo.ext.lower() }}" />
+                <data android:pathPattern=".*..*\.{{ extInfo.ext.lower() }}" />
+                <data android:pathPattern=".*..*..*\.{{ extInfo.ext.lower() }}" />
+                <data android:pathPattern=".*..*..*..*\.{{ extInfo.ext.lower() }}" />
+                <data android:pathPattern=".*..*..*..*..*\.{{ extInfo.ext.lower() }}" />
+                <data android:pathPattern=".*..*..*..*..*..*\.{{ extInfo.ext.lower() }}" />
+                <data android:pathPattern=".*..*..*..*..*..*..*\.{{ extInfo.ext.lower() }}" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*\.{{ extInfo.ext.lower() }}" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*\.{{ extInfo.ext.lower() }}" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*\.{{ extInfo.ext.lower() }}" />
+                <data android:pathPattern=".*\.{{ extInfo.ext.upper() }}" />
+                <data android:pathPattern=".*..*\.{{ extInfo.ext.upper() }}" />
+                <data android:pathPattern=".*..*..*\.{{ extInfo.ext.upper() }}" />
+                <data android:pathPattern=".*..*..*..*\.{{ extInfo.ext.upper() }}" />
+                <data android:pathPattern=".*..*..*..*..*\.{{ extInfo.ext.upper() }}" />
+                <data android:pathPattern=".*..*..*..*..*..*\.{{ extInfo.ext.upper() }}" />
+                <data android:pathPattern=".*..*..*..*..*..*..*\.{{ extInfo.ext.upper() }}" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*\.{{ extInfo.ext.upper() }}" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*\.{{ extInfo.ext.upper() }}" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*\.{{ extInfo.ext.upper() }}" />
+            </intent-filter>
+    {% for mimeType in extInfo.mimeTypes %}
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="content" />
+                <data android:mimeType="{{ mimeType }}" />
+            </intent-filter>
+    {% endfor %}
+        </activity>
+{% endfor %}
+    </application>
+</manifest>

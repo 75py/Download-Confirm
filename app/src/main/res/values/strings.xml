@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string name="app_name" translatable="false">Download Confirm</string>
-    <string name="label_apk" translatable="false">[APK] Download Confirm</string>
-    <string name="label_pdf" translatable="false">[PDF] Download Confirm</string>
-    <string name="label_zip" translatable="false">[ZIP] Download Confirm</string>
-    <string name="label_tgz" translatable="false">[TGZ] Download Confirm</string>
 
     <string name="pref_title_target_extension">Extensions</string>
     <string name="pref_title_about">About</string>

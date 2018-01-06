@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+{% for extInfo in extensionInfoList %}
+    <string name="label_{{ extInfo.ext.lower() }}" translatable="false">[{{ extInfo.ext.upper() }}] Download Confirm</string>
+{% endfor %}
+</resources>
