@@ -2,27 +2,12 @@
 
     <PreferenceCategory android:title="@string/pref_title_target_extension">
 
-
+{% for extInfo in extensionInfoList %}
         <CheckBoxPreference
             android:defaultValue="true"
-            android:key=".extension.Apk"
-            android:title="APK" />
-
-        <CheckBoxPreference
-            android:defaultValue="true"
-            android:key=".extension.Pdf"
-            android:title="PDF" />
-
-        <CheckBoxPreference
-            android:defaultValue="true"
-            android:key=".extension.Tgz"
-            android:title="TGZ" />
-
-        <CheckBoxPreference
-            android:defaultValue="true"
-            android:key=".extension.Zip"
-            android:title="ZIP" />
-
+            android:key=".extension.{{ extInfo.ext.capitalize() }}"
+            android:title="{{ extInfo.ext.upper() }}" />
+{% endfor %}
 
     </PreferenceCategory>
 

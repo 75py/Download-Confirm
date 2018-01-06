@@ -18,6 +18,10 @@ xmlTemplates = [
         "template": "strings_ext.xml",
         "output": "../app/src/main/res/values/strings_ext.xml"
     },
+    {
+        "template": "pref_general.xml",
+        "output": "../app/src/main/res/xml/pref_general.xml"
+    },
 ]
 javaTemplates = [
     {
