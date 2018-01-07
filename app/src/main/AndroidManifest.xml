@@ -30,6 +30,11 @@
             android:enabled="true"
             android:exported="false" />
 
+        <activity
+            android:name=".LicenseActivity"
+            android:label="@string/open_source_license"
+            android:parentActivityName=".SettingActivity" />
+
         <!-- Extensions -->
 
         <activity

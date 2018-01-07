@@ -47,6 +47,12 @@
                 android:data="@string/github_url" />
         </Preference>
 
+        <Preference android:title="@string/open_source_license">
+            <intent
+                android:targetClass="com.nagopy.android.downloadconfirm.LicenseActivity"
+                android:targetPackage="com.nagopy.android.downloadconfirm" />
+        </Preference>
+
         <Preference
             android:selectable="false"
             android:summary="@string/version_name"

@@ -12,6 +12,7 @@
     <string name="version">Version</string>
     <string name="sample_links_url" translatable="false">https://github.com/75py/Download-Confirm/wiki/Sample-links</string>
     <string name="sample_links">Sample links</string>
+    <string name="open_source_license">Open source license</string>
 
     <string name="confirm_message_sub_not_found_apps">Not found apps that can download this file type.</string>
     <string name="confirm_message_sub_one_app">If you want to download it, please click download button.</string>
