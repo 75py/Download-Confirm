@@ -21,10 +21,12 @@
 
     <string name="label_apk" translatable="false">[APK] Download Confirm</string>
 
-    <string name="label_pdf" translatable="false">[PDF] Download Confirm</string>
+    <string name="label_zip" translatable="false">[ZIP] Download Confirm</string>
 
     <string name="label_tgz" translatable="false">[TGZ] Download Confirm</string>
 
-    <string name="label_zip" translatable="false">[ZIP] Download Confirm</string>
+    <string name="label_gz" translatable="false">[GZ] Download Confirm</string>
+
+    <string name="label_pdf" translatable="false">[PDF] Download Confirm</string>
 
 </resources>

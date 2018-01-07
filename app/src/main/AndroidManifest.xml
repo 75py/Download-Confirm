@@ -110,6 +110,138 @@
         </activity>
 
         <activity
+            android:name=".extension.ZipConfirmActivity"
+            android:enabled="true"
+            android:excludeFromRecents="true"
+            android:label="@string/label_zip"
+            android:launchMode="singleInstance"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:host="*" />
+
+                <data android:pathPattern=".*\.zip" />
+                <data android:pathPattern=".*..*\.zip" />
+                <data android:pathPattern=".*..*..*\.zip" />
+                <data android:pathPattern=".*..*..*..*\.zip" />
+                <data android:pathPattern=".*..*..*..*..*\.zip" />
+                <data android:pathPattern=".*..*..*..*..*..*\.zip" />
+                <data android:pathPattern=".*..*..*..*..*..*..*\.zip" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*\.zip" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*\.zip" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*\.zip" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*\.zip" />
+                <data android:pathPattern=".*\.ZIP" />
+                <data android:pathPattern=".*..*\.ZIP" />
+                <data android:pathPattern=".*..*..*\.ZIP" />
+                <data android:pathPattern=".*..*..*..*\.ZIP" />
+                <data android:pathPattern=".*..*..*..*..*\.ZIP" />
+                <data android:pathPattern=".*..*..*..*..*..*\.ZIP" />
+                <data android:pathPattern=".*..*..*..*..*..*..*\.ZIP" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*\.ZIP" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*\.ZIP" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*\.ZIP" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*\.ZIP" />
+            </intent-filter>
+    
+        </activity>
+
+        <activity
+            android:name=".extension.TgzConfirmActivity"
+            android:enabled="true"
+            android:excludeFromRecents="true"
+            android:label="@string/label_tgz"
+            android:launchMode="singleInstance"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:host="*" />
+
+                <data android:pathPattern=".*\.tgz" />
+                <data android:pathPattern=".*..*\.tgz" />
+                <data android:pathPattern=".*..*..*\.tgz" />
+                <data android:pathPattern=".*..*..*..*\.tgz" />
+                <data android:pathPattern=".*..*..*..*..*\.tgz" />
+                <data android:pathPattern=".*..*..*..*..*..*\.tgz" />
+                <data android:pathPattern=".*..*..*..*..*..*..*\.tgz" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*\.tgz" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*\.tgz" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*\.tgz" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*\.tgz" />
+                <data android:pathPattern=".*\.TGZ" />
+                <data android:pathPattern=".*..*\.TGZ" />
+                <data android:pathPattern=".*..*..*\.TGZ" />
+                <data android:pathPattern=".*..*..*..*\.TGZ" />
+                <data android:pathPattern=".*..*..*..*..*\.TGZ" />
+                <data android:pathPattern=".*..*..*..*..*..*\.TGZ" />
+                <data android:pathPattern=".*..*..*..*..*..*..*\.TGZ" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*\.TGZ" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*\.TGZ" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*\.TGZ" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*\.TGZ" />
+            </intent-filter>
+    
+        </activity>
+
+        <activity
+            android:name=".extension.GzConfirmActivity"
+            android:enabled="true"
+            android:excludeFromRecents="true"
+            android:label="@string/label_gz"
+            android:launchMode="singleInstance"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:host="*" />
+
+                <data android:pathPattern=".*\.gz" />
+                <data android:pathPattern=".*..*\.gz" />
+                <data android:pathPattern=".*..*..*\.gz" />
+                <data android:pathPattern=".*..*..*..*\.gz" />
+                <data android:pathPattern=".*..*..*..*..*\.gz" />
+                <data android:pathPattern=".*..*..*..*..*..*\.gz" />
+                <data android:pathPattern=".*..*..*..*..*..*..*\.gz" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*\.gz" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*\.gz" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*\.gz" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*\.gz" />
+                <data android:pathPattern=".*\.GZ" />
+                <data android:pathPattern=".*..*\.GZ" />
+                <data android:pathPattern=".*..*..*\.GZ" />
+                <data android:pathPattern=".*..*..*..*\.GZ" />
+                <data android:pathPattern=".*..*..*..*..*\.GZ" />
+                <data android:pathPattern=".*..*..*..*..*..*\.GZ" />
+                <data android:pathPattern=".*..*..*..*..*..*..*\.GZ" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*\.GZ" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*\.GZ" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*\.GZ" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*\.GZ" />
+            </intent-filter>
+    
+        </activity>
+
+        <activity
             android:name=".extension.PdfConfirmActivity"
             android:enabled="true"
             android:excludeFromRecents="true"
@@ -161,94 +293,6 @@
                 <data android:scheme="https" />
                 <data android:scheme="content" />
                 <data android:mimeType="application/pdf" />
-            </intent-filter>
-    
-        </activity>
-
-        <activity
-            android:name=".extension.TgzConfirmActivity"
-            android:enabled="true"
-            android:excludeFromRecents="true"
-            android:label="@string/label_tgz"
-            android:launchMode="singleInstance"
-            android:noHistory="true"
-            android:theme="@style/AppTheme.Dialog">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.BROWSABLE" />
-                <category android:name="android.intent.category.DEFAULT" />
-
-                <data android:scheme="http" />
-                <data android:scheme="https" />
-                <data android:host="*" />
-
-                <data android:pathPattern=".*\.tgz" />
-                <data android:pathPattern=".*..*\.tgz" />
-                <data android:pathPattern=".*..*..*\.tgz" />
-                <data android:pathPattern=".*..*..*..*\.tgz" />
-                <data android:pathPattern=".*..*..*..*..*\.tgz" />
-                <data android:pathPattern=".*..*..*..*..*..*\.tgz" />
-                <data android:pathPattern=".*..*..*..*..*..*..*\.tgz" />
-                <data android:pathPattern=".*..*..*..*..*..*..*..*\.tgz" />
-                <data android:pathPattern=".*..*..*..*..*..*..*..*..*\.tgz" />
-                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*\.tgz" />
-                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*\.tgz" />
-                <data android:pathPattern=".*\.TGZ" />
-                <data android:pathPattern=".*..*\.TGZ" />
-                <data android:pathPattern=".*..*..*\.TGZ" />
-                <data android:pathPattern=".*..*..*..*\.TGZ" />
-                <data android:pathPattern=".*..*..*..*..*\.TGZ" />
-                <data android:pathPattern=".*..*..*..*..*..*\.TGZ" />
-                <data android:pathPattern=".*..*..*..*..*..*..*\.TGZ" />
-                <data android:pathPattern=".*..*..*..*..*..*..*..*\.TGZ" />
-                <data android:pathPattern=".*..*..*..*..*..*..*..*..*\.TGZ" />
-                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*\.TGZ" />
-                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*\.TGZ" />
-            </intent-filter>
-    
-        </activity>
-
-        <activity
-            android:name=".extension.ZipConfirmActivity"
-            android:enabled="true"
-            android:excludeFromRecents="true"
-            android:label="@string/label_zip"
-            android:launchMode="singleInstance"
-            android:noHistory="true"
-            android:theme="@style/AppTheme.Dialog">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.BROWSABLE" />
-                <category android:name="android.intent.category.DEFAULT" />
-
-                <data android:scheme="http" />
-                <data android:scheme="https" />
-                <data android:host="*" />
-
-                <data android:pathPattern=".*\.zip" />
-                <data android:pathPattern=".*..*\.zip" />
-                <data android:pathPattern=".*..*..*\.zip" />
-                <data android:pathPattern=".*..*..*..*\.zip" />
-                <data android:pathPattern=".*..*..*..*..*\.zip" />
-                <data android:pathPattern=".*..*..*..*..*..*\.zip" />
-                <data android:pathPattern=".*..*..*..*..*..*..*\.zip" />
-                <data android:pathPattern=".*..*..*..*..*..*..*..*\.zip" />
-                <data android:pathPattern=".*..*..*..*..*..*..*..*..*\.zip" />
-                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*\.zip" />
-                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*\.zip" />
-                <data android:pathPattern=".*\.ZIP" />
-                <data android:pathPattern=".*..*\.ZIP" />
-                <data android:pathPattern=".*..*..*\.ZIP" />
-                <data android:pathPattern=".*..*..*..*\.ZIP" />
-                <data android:pathPattern=".*..*..*..*..*\.ZIP" />
-                <data android:pathPattern=".*..*..*..*..*..*\.ZIP" />
-                <data android:pathPattern=".*..*..*..*..*..*..*\.ZIP" />
-                <data android:pathPattern=".*..*..*..*..*..*..*..*\.ZIP" />
-                <data android:pathPattern=".*..*..*..*..*..*..*..*..*\.ZIP" />
-                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*\.ZIP" />
-                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*\.ZIP" />
             </intent-filter>
     
         </activity>

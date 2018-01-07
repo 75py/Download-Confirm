@@ -3,9 +3,10 @@ from jinja2 import Environment, FileSystemLoader
 data = {
     "extensionInfoList": [
         {"ext": "apk", "mimeTypes": ["application/vnd.android.package-archive"]}
-        , {"ext": "pdf", "mimeTypes": ["application/pdf"]}
-        , {"ext": "tgz", "mimeTypes": []}
         , {"ext": "zip", "mimeTypes": []}
+        , {"ext": "tgz", "mimeTypes": []}
+        , {"ext": "gz", "mimeTypes": []}
+        , {"ext": "pdf", "mimeTypes": ["application/pdf"]}
     ]
 }
 

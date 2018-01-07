@@ -29,8 +29,8 @@
 
         <CheckBoxPreference
             android:defaultValue="true"
-            android:key=".extension.Pdf"
-            android:title="PDF" />
+            android:key=".extension.Zip"
+            android:title="ZIP" />
 
         <CheckBoxPreference
             android:defaultValue="true"
@@ -39,8 +39,13 @@
 
         <CheckBoxPreference
             android:defaultValue="true"
-            android:key=".extension.Zip"
-            android:title="ZIP" />
+            android:key=".extension.Gz"
+            android:title="GZ" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key=".extension.Pdf"
+            android:title="PDF" />
 
 
     </PreferenceCategory>
