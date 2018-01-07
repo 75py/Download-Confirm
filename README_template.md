@@ -1,6 +1,6 @@
-# Download-Confirm
+# Download-Confirm [![Build Status](https://travis-ci.org/75py/Download-Confirm.svg?branch=master)](https://travis-ci.org/75py/Download-Confirm)
 
-Prevents downloading files accidentaly.
+Prevents downloading files accidentaly.  
 When you clicked links on Chrome browser, the application chooser dialog is shown. Then, you choose "Download Confirm", the confirm dialog will be shown.
 
 ## Download
