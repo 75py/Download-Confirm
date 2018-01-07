@@ -60,6 +60,7 @@
                 <data android:pathPattern=".*..*..*..*..*..*..*..*\.{{ extInfo.ext.lower() }}" />
                 <data android:pathPattern=".*..*..*..*..*..*..*..*..*\.{{ extInfo.ext.lower() }}" />
                 <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*\.{{ extInfo.ext.lower() }}" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*\.{{ extInfo.ext.lower() }}" />
                 <data android:pathPattern=".*\.{{ extInfo.ext.upper() }}" />
                 <data android:pathPattern=".*..*\.{{ extInfo.ext.upper() }}" />
                 <data android:pathPattern=".*..*..*\.{{ extInfo.ext.upper() }}" />
@@ -70,6 +71,7 @@
                 <data android:pathPattern=".*..*..*..*..*..*..*..*\.{{ extInfo.ext.upper() }}" />
                 <data android:pathPattern=".*..*..*..*..*..*..*..*..*\.{{ extInfo.ext.upper() }}" />
                 <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*\.{{ extInfo.ext.upper() }}" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*\.{{ extInfo.ext.upper() }}" />
             </intent-filter>
     {% for mimeType in extInfo.mimeTypes %}
             <intent-filter>

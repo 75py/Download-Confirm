@@ -75,6 +75,7 @@ public abstract class HookTest {
                 , "dummy1.dummy2.dummy3.dummy4.dummy5.dummy6.dummy7.dummy8"
                 , "dummy1.dummy2.dummy3.dummy4.dummy5.dummy6.dummy7.dummy8.dummy9"
                 , "dummy1.dummy2.dummy3.dummy4.dummy5.dummy6.dummy7.dummy8.dummy9.dummy10"
+                , "dummy1.dummy2.dummy3.dummy4.dummy5.dummy6.dummy7.dummy8.dummy9.dummy10.dummy11"
         };
         String[] exts = {extension.toLowerCase(), extension.toUpperCase()};
         for (String scheme : schemes) {
@@ -128,6 +129,7 @@ public abstract class HookTest {
                 , "dummy1.dummy2.dummy3.dummy4.dummy5.dummy6.dummy7.dummy8"
                 , "dummy1.dummy2.dummy3.dummy4.dummy5.dummy6.dummy7.dummy8.dummy9"
                 , "dummy1.dummy2.dummy3.dummy4.dummy5.dummy6.dummy7.dummy8.dummy9.dummy10"
+                , "dummy1.dummy2.dummy3.dummy4.dummy5.dummy6.dummy7.dummy8.dummy9.dummy10.dummy11"
         };
         String[] exts = {extension.toLowerCase(), extension.toUpperCase()};
         for (String scheme : schemes) {

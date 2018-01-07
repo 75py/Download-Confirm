@@ -60,6 +60,7 @@
                 <data android:pathPattern=".*..*..*..*..*..*..*..*\.apk" />
                 <data android:pathPattern=".*..*..*..*..*..*..*..*..*\.apk" />
                 <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*\.apk" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*\.apk" />
                 <data android:pathPattern=".*\.APK" />
                 <data android:pathPattern=".*..*\.APK" />
                 <data android:pathPattern=".*..*..*\.APK" />
@@ -70,6 +71,7 @@
                 <data android:pathPattern=".*..*..*..*..*..*..*..*\.APK" />
                 <data android:pathPattern=".*..*..*..*..*..*..*..*..*\.APK" />
                 <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*\.APK" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*\.APK" />
             </intent-filter>
     
             <intent-filter>
@@ -114,6 +116,7 @@
                 <data android:pathPattern=".*..*..*..*..*..*..*..*\.pdf" />
                 <data android:pathPattern=".*..*..*..*..*..*..*..*..*\.pdf" />
                 <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*\.pdf" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*\.pdf" />
                 <data android:pathPattern=".*\.PDF" />
                 <data android:pathPattern=".*..*\.PDF" />
                 <data android:pathPattern=".*..*..*\.PDF" />
@@ -124,6 +127,7 @@
                 <data android:pathPattern=".*..*..*..*..*..*..*..*\.PDF" />
                 <data android:pathPattern=".*..*..*..*..*..*..*..*..*\.PDF" />
                 <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*\.PDF" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*\.PDF" />
             </intent-filter>
     
             <intent-filter>
@@ -168,6 +172,7 @@
                 <data android:pathPattern=".*..*..*..*..*..*..*..*\.tgz" />
                 <data android:pathPattern=".*..*..*..*..*..*..*..*..*\.tgz" />
                 <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*\.tgz" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*\.tgz" />
                 <data android:pathPattern=".*\.TGZ" />
                 <data android:pathPattern=".*..*\.TGZ" />
                 <data android:pathPattern=".*..*..*\.TGZ" />
@@ -178,6 +183,7 @@
                 <data android:pathPattern=".*..*..*..*..*..*..*..*\.TGZ" />
                 <data android:pathPattern=".*..*..*..*..*..*..*..*..*\.TGZ" />
                 <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*\.TGZ" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*\.TGZ" />
             </intent-filter>
     
         </activity>
@@ -210,6 +216,7 @@
                 <data android:pathPattern=".*..*..*..*..*..*..*..*\.zip" />
                 <data android:pathPattern=".*..*..*..*..*..*..*..*..*\.zip" />
                 <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*\.zip" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*\.zip" />
                 <data android:pathPattern=".*\.ZIP" />
                 <data android:pathPattern=".*..*\.ZIP" />
                 <data android:pathPattern=".*..*..*\.ZIP" />
@@ -220,6 +227,7 @@
                 <data android:pathPattern=".*..*..*..*..*..*..*..*\.ZIP" />
                 <data android:pathPattern=".*..*..*..*..*..*..*..*..*\.ZIP" />
                 <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*\.ZIP" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*\.ZIP" />
             </intent-filter>
     
         </activity>
