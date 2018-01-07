@@ -32,11 +32,11 @@
     <PreferenceCategory android:title="@string/pref_title_about">
 
         <Preference
-            android:summary="@string/help_summary"
-            android:title="@string/help">
+            android:summary="@string/sample_links_url"
+            android:title="@string/sample_links">
             <intent
                 android:action="android.intent.action.VIEW"
-                android:data="@string/help_url" />
+                android:data="@string/sample_links_url" />
         </Preference>
 
         <Preference

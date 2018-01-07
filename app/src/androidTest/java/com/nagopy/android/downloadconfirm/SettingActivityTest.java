@@ -53,20 +53,20 @@ public class SettingActivityTest extends ActivityInstrumentationTestCase2<Settin
      * ヘルプへのリンクをクリックしてIntentが飛ぶことを確認する.
      */
     @Test
-    public void test_clickHelpLink() throws Throwable {
+    public void test_clickSampleLinks() throws Throwable {
         IntentFilter intentFilter = new IntentFilter(Intent.ACTION_VIEW);
-        intentFilter.addDataScheme("http");
-        intentFilter.addDataPath("http://apps.nagopy.com/android/downloadconfirm.html", PatternMatcher.PATTERN_LITERAL);
+        intentFilter.addDataScheme("https");
+        intentFilter.addDataPath("https://github.com/75py/Download-Confirm/wiki/Sample-links", PatternMatcher.PATTERN_LITERAL);
         Instrumentation.ActivityMonitor monitor = new Instrumentation.ActivityMonitor(intentFilter, null, true);
         getInstrumentation().addMonitor(monitor);
 
         ListView listView = activity.findViewById(android.R.id.list);
 
         TouchUtils.dragViewToTop(this, listView); // 問題回避用のドラッグ
-        onData(PreferenceMatchers.withTitle(R.string.help)).perform(click());
+        onData(PreferenceMatchers.withTitle(R.string.sample_links)).perform(click());
 
         // 確認
-        assertEquals("ヘルプへのリンクをクリックしてintentが投げられることを確認", 1, monitor.getHits());
+        assertEquals(1, monitor.getHits());
 
         // ActivityMonitor の削除
         getInstrumentation().removeMonitor(monitor);

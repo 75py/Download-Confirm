@@ -6,8 +6,7 @@
     <string name="pref_title_about">このアプリについて</string>
     <string name="source">ソースコード</string>
     <string name="version">バージョン</string>
-    <string name="help">ヘルプ</string>
-    <string name="help_summary">動作確認用のリンクがありますので、ご利用ください。</string>
+    <string name="sample_links">サンプルのリンク</string>
     <string name="confirm_message_sub_not_found_apps">このファイルをダウンロードできるアプリが見つかりませんでした。</string>
     <string name="confirm_message_sub_one_app">このファイルをダウンロードする場合は、ダウンロードボタンをタップしてください。</string>
     <string name="confirm_message_sub_many_apps">このファイルをダウンロードする場合は、ダウンロードボタンをタップし、ウェブブラウザ（Chrome等）を選択してください。</string>
