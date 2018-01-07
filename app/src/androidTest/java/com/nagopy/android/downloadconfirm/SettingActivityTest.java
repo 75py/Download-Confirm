@@ -1,3 +1,19 @@
+/*
+ * Copyright 2014 75py
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package com.nagopy.android.downloadconfirm;
 
 import android.app.Instrumentation;
@@ -53,20 +69,20 @@ public class SettingActivityTest extends ActivityInstrumentationTestCase2<Settin
      * ヘルプへのリンクをクリックしてIntentが飛ぶことを確認する.
      */
     @Test
-    public void test_clickHelpLink() throws Throwable {
+    public void test_clickSampleLinks() throws Throwable {
         IntentFilter intentFilter = new IntentFilter(Intent.ACTION_VIEW);
-        intentFilter.addDataScheme("http");
-        intentFilter.addDataPath("http://apps.nagopy.com/android/downloadconfirm.html", PatternMatcher.PATTERN_LITERAL);
+        intentFilter.addDataScheme("https");
+        intentFilter.addDataPath("https://github.com/75py/Download-Confirm/wiki/Sample-links", PatternMatcher.PATTERN_LITERAL);
         Instrumentation.ActivityMonitor monitor = new Instrumentation.ActivityMonitor(intentFilter, null, true);
         getInstrumentation().addMonitor(monitor);
 
         ListView listView = activity.findViewById(android.R.id.list);
 
         TouchUtils.dragViewToTop(this, listView); // 問題回避用のドラッグ
-        onData(PreferenceMatchers.withTitle(R.string.help)).perform(click());
+        onData(PreferenceMatchers.withTitle(R.string.sample_links)).perform(click());
 
         // 確認
-        assertEquals("ヘルプへのリンクをクリックしてintentが投げられることを確認", 1, monitor.getHits());
+        assertEquals(1, monitor.getHits());
 
         // ActivityMonitor の削除
         getInstrumentation().removeMonitor(monitor);

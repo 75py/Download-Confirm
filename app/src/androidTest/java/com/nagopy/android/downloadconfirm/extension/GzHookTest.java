@@ -27,16 +27,16 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 @RunWith(AndroidJUnit4.class)
-public class ZipHookTest extends HookTest {
+public class GzHookTest extends HookTest {
 
 
     @Test
-    public void testZipHookEnabled() throws Throwable {
-        testCheckboxOn("zip", R.string.label_zip);
+    public void testGzHookEnabled() throws Throwable {
+        testCheckboxOn("gz", R.string.label_gz);
     }
 
     @Test
-    public void testZipHookDisabled() throws Throwable {
-        testCheckboxOff("zip");
+    public void testGzHookDisabled() throws Throwable {
+        testCheckboxOff("gz");
     }
 }

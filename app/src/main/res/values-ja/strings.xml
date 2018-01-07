@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2014 75py
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
 <resources>
     <string name="confirm_message">これは【%1$s】のファイルです。\n%2$s</string>
     <string name="download">ダウンロード</string>
@@ -6,8 +22,8 @@
     <string name="pref_title_about">このアプリについて</string>
     <string name="source">ソースコード</string>
     <string name="version">バージョン</string>
-    <string name="help">ヘルプ</string>
-    <string name="help_summary">動作確認用のリンクがありますので、ご利用ください。</string>
+    <string name="sample_links">サンプルのリンク</string>
+    <string name="open_source_license">オープンソースライセンス</string>
     <string name="confirm_message_sub_not_found_apps">このファイルをダウンロードできるアプリが見つかりませんでした。</string>
     <string name="confirm_message_sub_one_app">このファイルをダウンロードする場合は、ダウンロードボタンをタップしてください。</string>
     <string name="confirm_message_sub_many_apps">このファイルをダウンロードする場合は、ダウンロードボタンをタップし、ウェブブラウザ（Chrome等）を選択してください。</string>
